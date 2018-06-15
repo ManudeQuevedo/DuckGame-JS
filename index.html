@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DuckHunt JS Version</title>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <script src="js/libs.js"></script>
+  <script src="js/duckhunt.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <div>
+    <div id="header" class="header">
+      <h1>DuckHunt | JS Edition</h1>
+    </div>
+    <div id="gameField" class="gameField">
+        <div id="game" class="game" style="background-color: rgb(100, 176, 255);">
+          <div id="theFlash" class="theFlash" style="display: none;"></div>
+          <div id="tree" class="tree"></div>
+          <div id="grass" class="grass"></div>
+          <div id="theDog" class="theDog" style="display: block; background-position: 0px 0px; bottom: -10px;"></div>
+          <div id="1" class="deadDuck" style="top: 420px; left: 262.57px; background-position: -76px -365px;"></div>
+          <div id="2" class="deadDuck" style="background-position: -152px -365px; top: 420px; left: 560.072px;"></div>
+          <div id="3" class="deadDuck" style="background-position: -76px -365px; top: 420px; left: 519.687px;"></div>
+          <div id="4" class="deadDuck" style="background-position: 0px -73px; top: -200px; left: 460px;"></div>
+          <div id="5" class="deadDuck" style="background-position: 0px -73px; top: -200px; left: 460px;"></div>
+          <div id="6" class="deadDuck" style="background-position: -76px -365px; top: 420px; left: 564.991px;"></div>
+        <div id="SplashScreen">
+          <input id="StartButton" class="startButton" type="button" value="Iniciar"/>
+        </div>
+      </div>
+      <div class="gameinfo ammo" id="ammo" style="display: block;">
+        Balas:
+        <img src="img/bullet.png" align="absmiddle">
+        <img src="img/bullet.png" align="absmiddle">
+        <img src="img/bullet.png" align="absmiddle">
+      </div>
+      <div class="gameinfo waves" id="waves" style="display: block;">Ola 3 de 3</div>
+      <div class="gameinfo duckBoard" id="duckBoard" style="display: block;">
+        <img src="img/duckLive.png">
+        <img src="img/duckLive.png">
+        <img src="img/duckLive.png">
+        <img src="img/duckLive.png">
+        <img src="img/duckLive.png">
+        <img src="img/duckLive.png">
+      </div>
+      <div class="gameinfo scoreboard" id="scoreboard">Puntos: 0</div>
+
+      <div id="loser" class="messages loser" style="display: none;">
+        Con esa puntería, te mueres de hambre
+        <br>
+        <br>
+        <div class="tryAgain">Intentar</div>
+      </div>
+
+      <div id="winner" class="messages winner">
+        You are ducking awesome!
+      </div>
+
+      <div id="nivel" class="messages nivel" style="display: none;">Nivel 1</div>
+    </div>
+    <div id="info"></div>
+    <audio class="sounds" id="gunSound" preload="auto">
+      <source type="audio/ogg" src="sounds/gunSound.ogg">
+      <source type="audio/mp3" src="sounds/gunSound.mp3">
+    </audio>
+    <audio class="sounds" id="gunSound2" preload="auto">
+      <source type="audio/ogg" src="sounds/gunSound.ogg">
+      <source type="audio/mp3" src="sounds/gunSound.mp3">
+    </audio>
+    <audio class="sounds" id="laugh" preload="auto">
+      <source type="audio/ogg" src="sounds/laugh.ogg">
+      <source type="audio/mp3" src="sounds/laugh.mp3">
+    </audio>
+    <audio class="sounds" id="quak" preload="auto">
+      <source type="audio/ogg" src="sounds/quak.ogg">
+      <source type="audio/mp3" src="sounds/quak.mp3">
+    </audio>
+    <audio class="sounds" id="thud" preload="auto">
+      <source type="audio/ogg" src="sounds/thud.ogg">
+      <source type="audio/mp3" src="sounds/thud.mp3">
+    </audio>
+    <audio class="sounds" id="quacking" loop="loop">
+      <source type="audio/ogg" src="sounds/quacking.ogg">
+      <source type="audio/mp3" src="sounds/quacking.mp3">
+    </audio>
+    <audio class="sounds" id="sniff" preload="auto">
+      <source type="audio/ogg" src="sounds/sniff.ogg">
+      <source type="audio/mp3" src="sounds/sniff.mp3">
+    </audio>
+    <audio class="sounds" id="bark" preload="auto">
+      <source type="audio/ogg" src="sounds/barkDucks.ogg">
+      <source type="audio/mp3" src="sounds/barkDucks.mp3">
+    </audio>
+    <audio class="sounds" id="victory" preload="auto">
+      <source type="audio/ogg" src="sounds/champ.ogg">
+      <source type="audio/mp3" src="sounds/champ.mp3">
+    </audio>
+    <audio class="sounds" id="defeat" preload="auto">
+      <source type="audio/ogg" src="sounds/loserSound.ogg">
+      <source type="audio/mp3" src="sounds/loserSound.mp3">
+    </audio>
+</body>
+</html>

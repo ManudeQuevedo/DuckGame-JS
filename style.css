@@ -64,7 +64,7 @@ h1 {
 	margin: 0 auto;
 	border: solid;
 	background: #64b0ff;
-	cursor: pointer;
+	cursor: crosshair;
 	overflow: hidden;
 }
 

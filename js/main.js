@@ -1,6 +1,8 @@
 $(function() {
     FastClick.attach(document.body);
 
+    $(".gameField").css("cursor: url('../img/target.png'), auto");
+
     $(document).on('click','.tryAgain',function(){
         duckhunt.retry();
     });
@@ -15,7 +17,7 @@ $(function() {
         duckhunt.clearField();
 
         duckhunt.loadLevel({
-            id: 0,
+            id: 1,
             title: 'Nivel 1',
             waves: LCwaves,
             ducks: LCducks,

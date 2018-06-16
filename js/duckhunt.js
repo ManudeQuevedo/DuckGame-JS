@@ -85,7 +85,7 @@ Dog.prototype.intro = function(e) {
     this.DOM.spState(6), this.DOM.spStart(), this.DOM.animate({
         top: "420"
     }, 800, _.bind(function() {
-        this.sounds.thud[0].play(), delete $._spritely.instances[this.id], this.DOM.attr("class", "deadDuck"), this.game.trigger("duck:down")
+        this.sounds.thud[0].play(), delete $._spritely.instances[this.id], this.DOM.attr("class", "deadDuck"), this.game.trigger("duck:down");
     }, this));
 }, Duck.prototype.hatch = function() {
     $('<div id="' + this.id + '" class="duck ' + this.className + '"></div>').appendTo(this.game), this.DOM = $("#" + this.id), this.bindEvents();
@@ -102,7 +102,7 @@ Dog.prototype.intro = function(e) {
         bottom: 0,
         speed: e.speed,
         pause: 0
-    }), this
+    }), this;
 }, Duck.prototype.escape = function() {
     return this.unbindEvents(), this.DOM.hasClass("deadSpin") || (this.game.trigger("duck:miss"), this.game.animate({
     backgroundColor: "#fbb4d4" // Turns background color to a soft red when a duck is not killed.
@@ -110,7 +110,7 @@ Dog.prototype.intro = function(e) {
         top: "-200",
         left: "460"
     }, 500, function() {
-        delete $._spritely.instances[this.id], $(this).attr("class", "deadDuck")
+        delete $._spritely.instances[this.id], $(this).attr("class", "deadDuck");
     })), this
 }, Duck.prototype.setSpeed = function(e) {
     switch (e) {

@@ -1,3 +1,15 @@
+/* Fonts */
+
+@font-face {
+	font-family: "Duck Hunt";
+	src: url("fonts/duckhunt.ttf");
+}
+
+@font-face {
+	font-family: "Fira Code";
+	src: url("fonts/FiraCode-Regular.otf");
+}
+
 div {
 	-webkit-user-select: none;
 	-khtml-user-select: none;

@@ -54,9 +54,9 @@ Dog.prototype.intro = function(e) {
     }, this.DOM), 500)
 }, this))
 }, Dog.prototype.fetch = function() {
-    this.DOM.stop(!0, !1), this.DOM.show(), this.DOM.css("background-position", "0px 0px"), this.sounds.ohYeah[0].play(), this._upDown();
+    this.DOM.stop(!0, !1), this.DOM.show(), this.DOM.css("background-position", "0px 0px"),  this._upDown()
 }, Dog.prototype.laugh = function() {
-    this.DOM.stop(!0, !1), this.DOM.show(), this.DOM.css("background-position", "-276px 0px"), this.sounds.laugh[0].play(), this._upDown();
+    this.DOM.stop(!0, !1), this.DOM.show(), this.DOM.css("background-position", "-276px 0px"), this.sounds.laugh[0].play(), this._upDown()
 }, Dog.prototype._upDown = function() {
     this.DOM.animate({
         bottom: "110"
